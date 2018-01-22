@@ -1,0 +1,7 @@
+ifplugin Mail::SpamAssassin::Plugin::FromMismatch
+
+header	  FROM_MISMATCH	eval:check_for_from_mismatch()
+describe  FROM_MISMATCH	Two different domain addresses in From
+score	  FROM_MISMATCH	0.1
+
+endif
